@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Funcionalidades de la página demoblaze" tests="2" skipped="0" failures="1" errors="0" timestamp="2024-05-01T02:39:07" hostname="DESKTOP-E18IH93" time="87.352">
+  <properties/>
+  <testcase name="Registro de un nuevo usuario" classname="Funcionalidades de la página demoblaze" time="35.682">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expected: &quot;Sign up successful.&quot;&#13;&#10;     but: was &quot;This user already exist.&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &quot;Sign up successful.&quot;
+     but: was &quot;This user already exist.&quot;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:397)
+	at com.co.PruebaAccenture.stepsDefinitions.StepsDefinitionsDemoBlaze.deberíaEstarRegistradoExitosamenteEnProductStore(StepsDefinitionsDemoBlaze.java:44)
+	at ✽.debería estar registrado exitosamente en Product Store &quot;Sign up successful.&quot;(file:///C:/Users/Mario/Desktop/Reto%20Consubanco/Web/final/PruebaConsubanco/src/test/resources/features/demoblaze.feature:17)
+</failure>
+  </testcase>
+  <testcase name="Realizar proceso completo de compra en demoblaze" classname="Funcionalidades de la página demoblaze" time="51.67"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Registro de un nuevo usuario(funcionalidades-de-la-página-demoblaze;registro-de-un-nuevo-usuario)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [start-maximized, incognito, test-type, no-sandbox, lang=es, disable-popup-blocking, disable-download-notification, ignore-certificate-errors, allow-running-insecure-content, disable-translate, always-authorize-plugins, disable-extensions, disable-notifications, lang=en, start-maximized, incognito, test-type, no-sandbox, lang=es, disable-popup-blocking, disable-download-notification, ignore-certificate-errors, allow-running-insecure-content, disable-translate, always-authorize-plugins, disable-extensions, disable-notifications, lang=en, remote-allow-origins=*], extensions: []}}
+abr. 30, 2024 9:39:19 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 124
+abr. 30, 2024 9:39:19 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 124.0.6367.91. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] WARN net.thucydides.core.webdriver.WebDriverFacade - Failed to take screenshot (unexpected alert open: <unknown>
+  (Session info: chrome=124.0.6367.91): 
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dd84c4434994e5ceb58f5d9509b8dbd, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Mario\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63934}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63934/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dd84c4434994e5ceb58f5d9509b8dbd)
+[Test worker] ERROR  - 
+  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
+ |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
+   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
+
+Registro de un nuevo usuario
+-----------------------------------------------------------------------
+[Test worker] ERROR  -     Test failed at step: 1: Registro de un nuevo usuario ({usuario=CamiloJose52, clave=112345, mensaje=Sign up successful.})
+[Test worker] ERROR  -     Expected: "Sign up successful." but: was "This user already exist."
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Realizar proceso completo de compra en demoblaze(funcionalidades-de-la-página-demoblaze;realizar-proceso-completo-de-compra-en-demoblaze)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [start-maximized, incognito, test-type, no-sandbox, lang=es, disable-popup-blocking, disable-download-notification, ignore-certificate-errors, allow-running-insecure-content, disable-translate, always-authorize-plugins, disable-extensions, disable-notifications, lang=en, start-maximized, incognito, test-type, no-sandbox, lang=es, disable-popup-blocking, disable-download-notification, ignore-certificate-errors, allow-running-insecure-content, disable-translate, always-authorize-plugins, disable-extensions, disable-notifications, lang=en, remote-allow-origins=*], extensions: []}}
+abr. 30, 2024 9:39:47 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 124
+abr. 30, 2024 9:39:47 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 124.0.6367.91. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Realizar proceso completo de compra en demoblaze
+----------------------------------------------------------------------
+]]></system-err>
+</testsuite>
