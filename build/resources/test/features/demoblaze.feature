@@ -8,7 +8,7 @@ Característica: Funcionalidades de la página demoblaze
   Antecedentes: Abrir navegador
     Dado que estoy en la página de inicio de Product Store
 
-  @Regresion
+  @E2E @Registro
   Esquema del escenario: Registro de un nuevo usuario
 
     Cuando lleno el formulario de registro con mis datos
@@ -17,10 +17,10 @@ Característica: Funcionalidades de la página demoblaze
     Entonces debería estar registrado exitosamente en Product Store "<mensaje>"
 
     Ejemplos:
-      | usuario      | clave  | mensaje             |
-      | CamiloJose52 | 112345 | Sign up successful. |
+      | usuario | clave  | mensaje             |
+      | lerma4  | 112345 | Sign up successful. |
 
-  @Regresion
+  @E2E @InicioSesion
   Esquema del escenario: Realizar proceso completo de compra en demoblaze
     Dado que estoy en la página de inicio de Product Store inicio sesión con mis credenciales
       | usuario   | clave   |
@@ -32,5 +32,5 @@ Característica: Funcionalidades de la página demoblaze
     Entonces regreso a la pagina principal
 
     Ejemplos:
-      | usuario      | clave  | categoria | producto |
-      | CamiloJose52 | 112345 | Phones    | Samsung  |
+      | usuario | clave  | categoria | producto |
+      | lerma4  | 112345 | Phones    | Samsung  |

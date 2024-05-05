@@ -27,7 +27,7 @@ Se configuran los repositorios Maven Local, Maven Central y JCenter para la reso
 
 Las dependencias del proyecto se especifican en la sección `dependencies` del archivo `build.gradle`. Algunas de las dependencias clave incluyen:
 
-- `implementation 'net.serenity-bdd:serenity-cucumber:4.0.19'
+- `  implementation 'net.serenity-bdd:serenity-cucumber:4.0.19' `
 - `  implementation group: 'io.cucumber', name: 'datatable', version: "${versionCucumber}"`
 - `  testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: "${versionCucumber}"`
 - `  implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: "${versionSerenity}"`
@@ -57,7 +57,10 @@ Las dependencias del proyecto se especifican en la sección `dependencies` del a
 Para ejecutar las pruebas, utiliza el siguiente comando Gradle:
 
 ```bash
-gradle test --tests *RunnerTags* --info --tests *CA01*
+gradle test --tests *RunnerTags* --info --tests *Registro*
+```
+```bash
+gradle test --tests *RunnerTags* --info --tests *InicioSesion*
 ```
 ```bash
 gradle test --tests *RunnerTags* --info --tests *E2E*
